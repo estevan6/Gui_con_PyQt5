@@ -28,7 +28,7 @@ class CalculadoraAplicacion(QDialog):
             op2 = int(self.ui.txt_uno.text())
         suma = op1 + op2
 
-        self.ui.txt_salida.text(str(suma))
+        self.ui.txt_salida.setText(str(suma))
 
     def diferencia(self):
         resta = 0
@@ -40,7 +40,7 @@ class CalculadoraAplicacion(QDialog):
             op2 = int(self.ui.txt_uno.text())
         resta = op1 - op2
 
-        self.ui.txt_salida.text(str(resta))
+        self.ui.txt_salida.setText(str(resta))
 
     def mult(self):
         multiplo = 0
@@ -51,7 +51,7 @@ class CalculadoraAplicacion(QDialog):
         if len(self.ui.txt_dos.text()) > 0:
             op2 = int(self.ui.txt_uno.text())
         multiplo = op1 * op2
-        self.ui.txt_salida.text(str(multiplo))
+        self.ui.txt_salida.setText(str(multiplo))
 
     def div(self):
         dividir = 0
@@ -63,7 +63,7 @@ class CalculadoraAplicacion(QDialog):
             op2 = int(self.ui.txt_uno.text())
         dividir = op1 / op2
 
-        self.ui.txt_salida.text(str(dividir))
+        self.ui.txt_salida.setText(str(dividir))
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
